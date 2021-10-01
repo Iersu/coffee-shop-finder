@@ -1,4 +1,4 @@
-# Netflix Clone - Final Project for Frontend Career Path of Scrimba
+# Coffee Shop Finder
 
 ## Table of contents
 
