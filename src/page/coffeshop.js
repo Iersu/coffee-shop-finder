@@ -22,7 +22,7 @@ export default function CoffeSearch() {
             
             fetchShopId(lati,long).then( data => {
 
-                        data.venues.map((item, index) => {
+                        data.venues.map((item) => {
                              const distance = item.location.distance
                              const itemId = item.id
                               fetchShopDetails(itemId).then(data => {
