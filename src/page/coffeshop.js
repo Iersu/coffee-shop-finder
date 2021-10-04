@@ -26,7 +26,8 @@ export default function CoffeSearch() {
                              const distance = item.location.distance
                              const itemId = item.id
                               fetchShopDetails(itemId).then(data => {
-                                   if(data.response.venue.popular.isOpen && data.response.venue.price.tier) setShops(prev => [...prev,{name:data.response.venue.name,
+                                   if(data.response.venue.popular.isOpen && data.response.venue.price.tier) setShops(prev => [...prev,{
+                                    name:data.response.venue.name,
                                     distance: distance,
                                     photoUrl: data.response.venue.bestPhoto.prefix +"300x300"+ data.response.venue.bestPhoto.suffix,
                                     price:data.response.venue.price.tier ,
