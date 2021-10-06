@@ -37,7 +37,7 @@ export default function CoffeSearch() {
                                     }
                                      ])  
                                       
-                                    }).catch(err=> console.error(err.message))
+                                    })
                                         
                            return  null
                         })
