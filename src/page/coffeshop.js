@@ -25,13 +25,14 @@ export default function CoffeSearch() {
                         data.venues.map((item) => {
                              const distance = item.location.distance
                              const itemId = item.id
-                              fetchShopDetails(itemId).then(data => {
-                                   if(data.response.venue.popular.isOpen && data.response.venue.price.tier) setShops(prev => [...prev,{
-                                    name:data.response.venue.name,
-                                    distance: distance,
-                                    photoUrl: data.response.venue.bestPhoto.prefix +"300x300"+ data.response.venue.bestPhoto.suffix,
-                                    price:data.response.venue.price.tier ,
-                                    location:data.response.venue.location.address +","+ data.response.venue.location.city,
+                              fetchShopDetails(itemId).then(({ response }) => {
+                                   if(response.venue.popular.isOpen && response.venue.price.tier)
+                                    setShops(prev => [...prev,{
+                                        name: response.venue.name,
+                                        distance: distance,
+                                        photoUrl: response.venue.bestPhoto.prefix +"300x300"+ response.venue.bestPhoto.suffix,
+                                        price: response.venue.price.tier ,
+                                        location: response.venue.location.address +","+  response.venue.location.city,
                                 
                                     }
                                      ])  
