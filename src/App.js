@@ -1,8 +1,8 @@
-import React from 'react'
-import CoffeSearch from './page/coffeshop'
+import React from "react";
+import CoffeSearch from "./page/coffeshop";
 
 export function App() {
-  return <CoffeSearch />
+  return <CoffeSearch />;
 }
 
-export default App
+export default App;
