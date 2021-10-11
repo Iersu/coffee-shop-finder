@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/coffee-shop-finder/static/js/main.52e04e27.chunk.js",
-    "main.js.map": "/coffee-shop-finder/static/js/main.52e04e27.chunk.js.map",
+    "main.js": "/coffee-shop-finder/static/js/main.d841dff9.chunk.js",
+    "main.js.map": "/coffee-shop-finder/static/js/main.d841dff9.chunk.js.map",
     "runtime-main.js": "/coffee-shop-finder/static/js/runtime-main.42134604.js",
     "runtime-main.js.map": "/coffee-shop-finder/static/js/runtime-main.42134604.js.map",
     "static/js/2.f2057793.chunk.js": "/coffee-shop-finder/static/js/2.f2057793.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.42134604.js",
     "static/js/2.f2057793.chunk.js",
-    "static/js/main.52e04e27.chunk.js"
+    "static/js/main.d841dff9.chunk.js"
   ]
 }
