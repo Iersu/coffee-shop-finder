@@ -4,7 +4,7 @@ const useData = () => {
 
   const fetchShopIds = (lat, lng) => {
     return fetch(
-      `https://api.foursquare.com/v2/venues/search?ll=${lat},${lng}&client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&categoryId=4bf58dd8d48988d1e0931735&v=20212509&limit=4&radius=15000`
+      `https://api.foursquare.com/v2/venues/search?ll=${lat},${lng}&client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&categoryId=4bf58dd8d48988d1e0931735&v=20212509&limit=5&radius=15000`
     )
       .then((res) => res.json())
       .then((data) => {
