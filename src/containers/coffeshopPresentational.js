@@ -1,5 +1,5 @@
-import Main from "../components/coffeshop";
-import { CoffeeShopListItem } from "./coffeShopListItem";
+import Main from '../components/coffeshop'
+import { CoffeeShopListItem } from './coffeShopListItem'
 
 export const CoffeShopPresentational = ({
   toggleFilter,
@@ -8,14 +8,14 @@ export const CoffeShopPresentational = ({
 }) => {
   const selectOptions = [
     {
-      value: "distance",
-      label: "Distance",
+      value: 'distance',
+      label: 'Distance',
     },
     {
-      value: "price",
-      label: "Price",
+      value: 'price',
+      label: 'Price',
     },
-  ];
+  ]
 
   return (
     <>
@@ -52,5 +52,5 @@ export const CoffeShopPresentational = ({
         )}
       </Main.Frame>
     </>
-  );
-};
+  )
+}

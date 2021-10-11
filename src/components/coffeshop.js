@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Container,
   Title,
@@ -14,47 +14,47 @@ import {
   Pane,
   Header,
   Holder,
-} from "./styles/coffeshop-styles";
+} from './styles/coffeshop-styles'
 
 export default function Main({ children, ...restProps }) {
-  return <Container {...restProps}>{children}</Container>;
+  return <Container {...restProps}>{children}</Container>
 }
 
 Main.Frame = function MainFrame({ children, ...restProps }) {
-  return <Frame {...restProps}>{children}</Frame>;
-};
+  return <Frame {...restProps}>{children}</Frame>
+}
 Main.Header = function MainHeader({ children, ...restProps }) {
-  return <Header {...restProps}>{children}</Header>;
-};
+  return <Header {...restProps}>{children}</Header>
+}
 
 Main.Title = function MainTitle({ children, ...restProps }) {
-  return <Title {...restProps}>{children}</Title>;
-};
+  return <Title {...restProps}>{children}</Title>
+}
 Main.Name = function MainName({ children, ...restProps }) {
-  return <Name {...restProps}>{children}</Name>;
-};
+  return <Name {...restProps}>{children}</Name>
+}
 Main.Item = function MainItem({ children, ...restProps }) {
-  return <Item {...restProps}>{children}</Item>;
-};
+  return <Item {...restProps}>{children}</Item>
+}
 Main.Image = function MainImage({ children, ...restProps }) {
-  return <Image {...restProps}>{children}</Image>;
-};
+  return <Image {...restProps}>{children}</Image>
+}
 Main.Price = function MainPrice({ children, ...restProps }) {
-  return <Price {...restProps}>{children}</Price>;
-};
+  return <Price {...restProps}>{children}</Price>
+}
 Main.Open = function MainOpen({ children, ...restProps }) {
-  return <Open {...restProps}>{children}</Open>;
-};
+  return <Open {...restProps}>{children}</Open>
+}
 Main.Location = function MainLocation({ children, ...restProps }) {
-  return <Location {...restProps}>{children}</Location>;
-};
+  return <Location {...restProps}>{children}</Location>
+}
 Main.Pane = function MainPane({ children, ...restProps }) {
-  return <Pane {...restProps}>{children}</Pane>;
-};
+  return <Pane {...restProps}>{children}</Pane>
+}
 
 Main.Holder = function MainHolder({ children, ...restProps }) {
-  return <Holder {...restProps}>{children}</Holder>;
-};
+  return <Holder {...restProps}>{children}</Holder>
+}
 
 Main.Select = function MainSelect({ toggleFilter, setToggleFIlter, options }) {
   return (
@@ -69,9 +69,9 @@ Main.Select = function MainSelect({ toggleFilter, setToggleFIlter, options }) {
         </option>
       ))}
     </Select>
-  );
-};
+  )
+}
 
 Main.Content = function MainContent({ children, ...restProps }) {
-  return <Content {...restProps}>{children}</Content>;
-};
+  return <Content {...restProps}>{children}</Content>
+}

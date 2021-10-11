@@ -1,4 +1,4 @@
-import Main from "../components/coffeshop";
+import Main from '../components/coffeshop'
 
 export const CoffeeShopListItem = ({
   key,
@@ -28,5 +28,5 @@ export const CoffeeShopListItem = ({
         <Main.Name>{distance} m</Main.Name>
       </Main.Pane>
     </Main.Item>
-  );
-};
+  )
+}

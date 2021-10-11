@@ -1,6 +1,6 @@
 const useData = () => {
-  const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
-  const CLIENT_SECRET = process.env.REACT_APP_CLIENT_SECRET;
+  const CLIENT_ID = process.env.REACT_APP_CLIENT_ID
+  const CLIENT_SECRET = process.env.REACT_APP_CLIENT_SECRET
 
   const fetchShopIds = (lat, lng) => {
     return fetch(
@@ -8,29 +8,27 @@ const useData = () => {
     )
       .then((res) => res.json())
       .then((data) => {
-        const results = data.response;
-        console.log(results);
-        return results;
+        const results = data.response
+        return results
       })
       .catch((err) => {
-        console.error(err.message);
-      });
-  };
+        console.error(err.message)
+      })
+  }
   const fetchShopDetails = (itemId) => {
     return fetch(
       `https://api.foursquare.com/v2/venues/${itemId}?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&v=20212509`
     )
       .then((res) => res.json())
       .then((data) => {
-        const results = data;
-        console.log(results);
-        return results;
+        const results = data
+        return results
       })
       .catch((err) => {
-        console.error(err.message);
-      });
-  };
+        console.error(err.message)
+      })
+  }
 
-  return { fetchShopDetails, fetchShopIds };
-};
-export default useData;
+  return { fetchShopDetails, fetchShopIds }
+}
+export default useData
